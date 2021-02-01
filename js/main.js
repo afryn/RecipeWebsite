@@ -419,18 +419,23 @@ dropRcp.forEach(element => {
 
 const featuredScroller = document.getElementById('featured-scroller');
 
-featuredScroller.addEventListener('click', function ftrdPhone(){
-    if(hovering){
-        hovering = false
-    }
-    else{
-        hovering = true
-    }
-});
-
 const x = window.matchMedia("(max-width:925px)");
-ftrdPhone(x)
+ftrdPhone(x);
 x.addListener(ftrdPhone);
+
+function ftrdPhone(x){
+    if(x.matches){
+        featuredScroller.addEventListener('click',()=>{
+            if(hovering){
+                hovering = false
+            }
+            else{
+                hovering = true
+            } 
+        });
+    }
+}
+
 
 
 
