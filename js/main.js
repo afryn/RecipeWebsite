@@ -417,7 +417,9 @@ dropRcp.forEach(element => {
     });
 });
 
-
+$('.blank-link').on("click",function(e){
+    e.preventDefault()
+})
 
 
 
