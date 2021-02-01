@@ -1,0 +1,879 @@
+*{ 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*.................*/
+:root {
+    --green: rgb(102, 133, 45);
+}
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Josefin Sans', sans-serif; 
+}
+p, a, input, li{
+    font-family: 'Josefin Sans', sans-serif;
+}
+/* navigation bar  ..................................................*/
+nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 80px;
+    height: auto;
+    width: 100%;
+}
+nav .ul1 {
+    top: 0;
+    position: fixed;
+    height: 65px;
+    z-index: 2;
+    width: 100%;
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgba( 255, 255, 255, 0.35 );
+    backdrop-filter: blur( 30.5px );
+    -webkit-backdrop-filter: blur( 13.5px );
+    border-radius: 10px;
+}
+
+
+nav .ul1 a {
+    margin: 10px;
+}
+#ul1-icons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+#logo h2{
+    margin-top: 10px;
+}
+#ul1-icons li{
+  list-style: none;
+}
+#ul1-icons li a{
+  text-decoration: none;
+  color: black;
+  font-size: 1.2rem;
+}
+#ul1-icons li a:hover{
+ border-bottom: 4px solid rgb(255, 136, 0);
+
+}
+nav h1{
+    margin-top: 40px ;
+    font-size: 4rem;
+    font-weight: 1000;
+}
+nav p{
+    margin-bottom: 40px ;
+    font-size: .8rem;
+    text-transform: uppercase;
+}
+nav .searchbar{
+    margin-bottom: 20px;
+    border: 2px solid rgb(161, 160, 160);
+    height: 45px;
+    width: 220px;
+    border-radius: 15px;
+    padding: 5px 15px;
+    font-size: 1rem;
+    margin: 5px;
+    font-family: 'Quicksand', sans-serif;
+    transition: width .6s ease-out ;
+}
+#navHr{
+    background-color: rgb(228, 224, 224);
+    width: 90%; height:
+    1px;
+}
+nav .searchbar:focus{
+    width: 330px;
+    outline: none;
+}
+nav #ul2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 80%;
+    border-top: 2px solid rgb(202, 202, 202);
+}
+nav #ul2 a{
+    text-align: center;
+    padding: 5px;
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    border: none;
+    letter-spacing: 3px;
+    font-size: 1.3rem;
+    font-family: 'Josefin Sans', sans-serif;
+    height: 39px;
+    width: auto;
+    border-radius: 10px;
+    transition: color .3s ease-out;
+}
+nav #ul2 a:hover{
+    cursor: pointer;
+    background-color: rgb(255, 234, 176);
+    background-color: rgb(255, 234, 176); 
+}
+nav #ul2 a:focus{
+    color: black;
+    outline: none;
+    background-color:rgb(252, 221, 138);
+}
+#content{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: auto;
+}
+/* elements hidden by default ................................................... */
+#cards-cont{
+    padding-bottom: 80vh;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: auto;
+    width: 100%;
+    background-color: rgb(245, 245, 245);
+}
+#cards-cont button{
+    cursor: pointer;
+    border: none;
+    position: absolute;
+    top: 60px;
+    right: 0;
+}
+.hidden{
+    text-align: center;
+    margin: 10px 10px;
+    height: 422px;
+    width: 350px;
+    border-radius: 9px;
+    padding: 13px 11px;
+    border: 2px solid rgb(189, 189, 189);
+    background-color: white;
+}
+.hidden h4{
+    margin: 7px 0px;
+    text-align: center;
+    font-size: 1rem;
+    font-family: 'Josefin Sans', sans-serif;
+    text-transform: uppercase;
+}
+.hidden p{
+    font-family: 'Josefin Sans', sans-serif;
+    margin: 12px 0px ;
+    text-align: center;
+}
+.hidden img{
+    width:325px;
+    height:230px;
+    border-radius: 10px 10px 0px 0px;
+}
+.hidden-btn,
+.about-me a,
+.card-btn{
+    height: 40px;
+    width: 100px;
+    border: 2px solid rgb(122, 122, 122);
+    background:none;
+    border-radius: 9px;
+    padding: 9px 7px;
+    font-size: 0.9rem;
+    text-decoration: none;
+    font-family: 'Josefin Sans', sans-serif;
+    color: black;
+    margin-top: 10px;
+    transition: background-color 0.4s ease;
+}
+.hidden-btn:hover,
+.about-me a:hover,
+.card-btn{
+    background-color:  rgb(255, 234, 176);
+    color: black;
+}
+
+#recipe-cont{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    height: auto;
+    width: 95%;
+    background-color: rgb(255, 251, 245);
+}
+#recipe-btn p{
+    margin-bottom: 0px;
+}
+#recipe-btn p:hover{
+    cursor: pointer;
+}
+#recipe-img{
+    width: 40%;
+    margin: 15px 5px;
+    /* display:inline-block; */
+}
+#recipe-img img{
+    width: 100%;
+}
+#recipe-content{
+    width: 50%;
+    display: inline-block;
+    height: auto;
+    margin: 30px;
+    margin-top: 0;
+    margin-bottom: 15vh;
+}
+#recipe-cont p{
+    font-size: 1rem;
+    margin: 10px 0px;
+}
+#recipe-content #ctgry{
+    text-align: center;
+    margin: 0px 0px 30px 0px;
+    color: grey;
+}
+
+#recipe-cont h1{
+    text-align: center;
+    margin: 10px 0px 0px 0px;
+    font-size: 3rem;
+}
+#recipe-cont h6{
+    margin: 10px 0px;
+  font-size: 1.3rem;
+}
+
+.recp-back-btn{
+    height: 35px;
+    width: 80px;
+    text-decoration: none;
+    color: black;
+    background-color: rgb(247, 189, 83);
+    font-size: 1.2rem;
+    margin: 40px 0px 44px 125px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 2px 5px grey;
+    justify-content: center;
+}
+.recp-back-btn:hover{
+    cursor: pointer;
+    color: black;
+}
+
+/* home ..............................................................*/
+.home{
+    height: auto;
+    width: 90%;
+    position: relative;
+    margin: auto;
+}
+#slider-h1{
+    margin: 15px;
+    font-size: 2rem;
+    font-family: 'Josefin Sans', 'sans-serif';
+}
+.cont1-slides {
+    width: 100%;
+}
+.cont1-slides img{
+    height: 610px;
+    width: 100%;
+    
+}
+.slideNo{
+    margin: 10px ;
+    text-align: center;
+    font-size: 2rem;
+    border: 2px solid rgb(15, 15, 15);
+    color: rgb(236, 230, 230);
+    height: 40px;
+    width: 40px;
+    border-radius: 6px;
+    text-shadow: 0px 0px 4px black;
+    box-shadow: 0 0 4px rgb(250, 247, 247);
+    position: absolute;
+    top: 2px;
+    left: 2px;
+}
+
+.slide-content{
+    width: 33%;
+    left: 44px;
+    height: 80%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    top: 60px;
+    background: rgba( 255, 255, 255, 0.28 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 3.0px );
+    -webkit-backdrop-filter: blur( 3.0px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    
+}
+.cont1 .slideH1{
+    margin: 10px 10px;
+    font-size: 2.8rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 2.4rem;
+    text-shadow: 0px 0px 2px white;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.cont1 .slideP{
+    margin: 10px 10px;
+    margin-bottom: 40px;
+    width: 100%;
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.cont1 .readMore{
+    text-decoration: none;
+    padding: 10px 3px;
+    margin: 10px;
+    height: 40px;
+    width: 100px;
+    box-shadow: 0px 2px 5px #515151;
+    background-color:  rgb(255, 234, 176);
+    color: rgb(17, 16, 16);
+    border-radius: 9px;
+    border: none;
+    font-size: 1.1rem;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.cont1 .readMore:focus{
+    outline: none;
+}
+.cont1 .readMore:hover{
+    cursor: pointer;
+    background-color: rgb(253, 227, 154) ;
+}
+/* prev and next buttons  */
+.prev, .next{
+    text-decoration: none;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    background-color: rgba(105, 103, 103, 0.8);
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+.next{
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+.prev:hover, .next:hover{
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+}
+.fade{
+    animation: fade 0.35s forwards;
+}
+@keyframes fade{
+    from{opacity: .4}
+    to{opacity: 1}
+}
+/* featured posts scroller ........................................................................ */
+#featured-div{
+    margin-bottom: 50px;
+    height: 420px;
+    width: 99%;
+}
+#ftrd-h1{
+    margin: 20px;
+}
+#featured-scroller{
+    margin: 7px 8px ;
+    height: 460px;
+    width: 98%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+}
+.featured-card{
+    box-shadow: 0px 2px 15px rgb(179, 179, 179);
+    margin: 10px 10px;
+    height: 440px;
+    width: 400px;
+    border-radius: 9px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 10px 9px;
+}
+
+.featured-card h4{
+    margin-top: 10px;
+    font-size: 1rem;
+    font-family: 'Josefin Sans', sans-serif;
+    text-transform: uppercase;
+}
+.featured-card p{
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
+}
+.featured-card img{
+    border-radius: 10px 10px 0px 0px;
+    width:325px;
+    height:230px;
+}
+
+/* container 2 (latest post , about me ).............................................. */
+.cont2{
+    margin-top: 30px;
+    height: auto;
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+/* .latest-post....................... */
+.latest-post{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.latest-post h3{
+    font-size: 1.5rem;
+    margin: 15px;
+}
+.latest-post p{
+    margin: 15px;
+    font-size: 1.2rem;
+}
+.latest-post .dt{
+    color: grey;
+    font-size: 0.9rem;
+}
+.latest-post #latestButton{
+    margin: 15px;
+    height: 40px;
+    width: 150px;
+    background-color: white;
+    font-size: 1rem;
+    border: 2px solid grey;
+}
+.latest-post #latestButton:hover{
+    background-color: rgb(255, 234, 176);
+}
+.latest-post #latestButton:focus{
+    outline: none;
+    background-color: rgb(201, 201, 201);
+}
+.latest-post img{
+    width: 100%;
+    /* height: 60%; */
+    padding: 10px;
+}
+/* About me ................................ */
+#abt-fllw{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+}
+.abt-fllw-crd{
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.about-me{
+    height: auto;
+    padding: 0px;
+}
+.about-me img{
+    width: 150px ;
+    height: 150px;
+    border-radius: 50%;  
+}
+.about-me h2{
+    margin: 20px;
+}
+.about-me p{
+    margin: 20px;
+}
+#about-hr, #follow-hr{
+    margin-top: 30px;
+    width: 150px;
+    height: 2px;
+}
+#icons-div{
+    height: auto;
+    width:200px ;
+    display: flex;
+    justify-content: center;
+}
+.color-icons{
+    background-color: black;
+    margin: 3px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.color-icons img{
+    border-radius: 20%;
+}
+#fbColor{
+    background-color: rgb(57, 108, 175);
+}
+#twitterColor{
+    background-color: rgb(9, 164, 236);
+}
+#instaColor{
+    background-color: rgb(250, 64, 126);
+}
+#pinColor{
+    background-color: rgb(221, 0, 0);
+}
+#pinColor img{
+    height: 30px;
+width: 30px;
+}
+#sbscribe-form img{
+    width: 60% ;
+}
+#follow{
+    height: auto;
+    padding: 0px;
+}
+#follow h2{
+    margin: 20px 0px;
+}
+#follow p{
+    margin: 20px 0px;
+}
+#follow #icons-div{
+    margin: 20px 0px;
+}
+/* food categories ........................................................ */
+.categories{
+    margin: 20px;
+    height: auto;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+#categories-div{
+    margin: 20px;
+    height: auto;
+    width: 95%;
+    display: flex;
+    flex-direction: row ;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.catagory{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    width: 200px;
+    margin: 5px 5px;
+    margin-bottom: 0;
+}
+.catagory:hover{
+    cursor: pointer;
+}
+
+.catagory p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.692);
+    color: white;
+    height: 50px;
+    width: 190px;
+}
+.hover-div {
+    text-overflow: wrap;
+    position: relative;
+    margin: 5px;
+    margin-top: 0;
+    padding: 20px;
+    height: auto;
+    width: 200px;
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 0px 0px 30px 30px;
+}
+.ctgry-box{
+    display: flex;
+    flex-direction: column;
+}
+.hover-div a{
+    text-align: center;
+    display: block;
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-family:Jossefinsans ;
+    color: black;
+    margin: 8px 20px;
+}
+.catagory::before{
+    content: "";
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    opacity: 0.8;
+    z-index: -1;
+}
+#dssrt::before{
+    background: url("../images/homeslide1.jpg")center center/cover;
+}
+#apptzr::before{
+    background: url("../images/appetizers.jpg")center center/cover;
+}
+#slds::before{
+    background: url("../images/latestrecipe.jpg")center center/cover;
+}
+#mts::before{
+    background: url("../images/meats.jpg")center center/cover;
+}
+#pasta::before{
+    background: url("../images/confettipasta.jpg")center center/cover;
+}
+#others::before{
+    background: url("../images/homeslide5.jpg")center center/cover;
+}
+/* contact section ...................................... */
+.contact-form{
+    height: auto;
+}
+#contact{
+    width: 90%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+#contact-me{
+    background-color: rgb(255, 241, 196);
+    margin: 0px 20px ;
+    height: 500px;
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 65%;
+}
+#contact-me input{
+    height: 40px;
+    width: 90%;
+    border-radius: 6px;
+    border: 2px solid rgb(185, 185, 185);
+    padding: 0px 10px;
+    font-size: 1.1rem;
+}
+#contact-me input:focus{
+    outline: none;
+    border: 4px solid rgb(155, 212, 245);
+}
+#contact-me h3{
+    text-transform: uppercase;
+}
+#contact-me p{
+    font-size: 1.2rem;
+    text-align: center;
+}
+#contact-me button{
+    background-color: rgb(248, 180, 77);
+    height: 40px;
+    width: 90%;
+    border-radius: 6px;
+    padding: 0px 10px;
+    font-size: 1.1rem;
+    border: none;
+}
+#contact-me button:focus{
+    outline: none;
+}
+#contact-me button:hover{
+    background-color: rgb(255, 202, 122);
+    cursor: pointer;
+}
+#contact-me textarea{
+    border: 2px solid rgb(192, 192, 192);
+    width: 90%;
+    border-radius: 6px;
+    padding: 0px 10px;
+    font-size: 1.1rem;
+}
+#contact-me textarea:focus{
+    outline: none;
+    border: 4px solid rgb(155, 212, 245);
+}
+
+#nws-lttr,
+.contact-form{
+    background-color: rgb(232, 235, 236);
+    margin: 0px 20px ;
+    padding: 2%;
+    text-align: center;
+    width: 30%;
+}
+.contact-form{
+    padding: 10px;
+    background-color: rgb(255, 236, 198);
+    width: 65%;
+}
+#nws-lttr h3,
+.contact-form h3{
+    text-transform: uppercase;
+}
+#nws-lttr p,
+.contact-form p{
+    font-size: 1.2rem;
+    text-align: center;
+}
+#nws-lttr button,
+.contact-form button{
+    background-color: rgb(169, 199, 211);
+    height: 40px;
+    width: 100%;
+    border-radius: 6px;
+    padding: 0px 10px;
+    font-size: 1.1rem;
+    border: none;
+}
+#nws-lttr button:focus,
+.contact-form button:focus{
+    outline: none;
+}
+#nws-lttr button:hover{
+    background-color: rgb(143, 178, 192);
+    cursor: pointer;
+}
+.contact-form button{
+    background-color: rgb(255, 190, 106);
+}
+.contact-form button:hover{
+    background-color: rgb(255, 167, 85)
+}
+#error1,
+#error2{
+    color: red;
+}
+#success1,
+#success2{
+    color: green;
+}
+/* footer ........................................................................ */
+footer{
+    height: 400px;
+    color: aliceblue;
+    background-color: rgb(22, 22, 22);
+    width: 100%;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+#footer-icons-div{
+    display: flex;
+    flex-direction: row;
+}
+.footer-icon{
+    background-color:rgb(102, 133, 45);
+    height: 45px;
+    width: 45px;
+    margin: 5px;
+    display: flex;
+    
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+.footer-icon:hover{
+    transform: scale(1.2);
+}
+#footer-links1{
+    width: 320px;
+}
+footer a{
+    text-transform: uppercase;
+    font-size: 1rem;
+    color: white;
+    text-decoration: none;
+    margin: 20px;
+}
+footer a:hover{
+    color: rgb(102, 133, 45);
+}
+#footer-links2{
+    width: 280px;
+    display: flex;
+    flex-direction: row;
+    height: 20px;
+}
+#footer-links2 a{
+    font-size: 0.8rem;
+    color: rgb(179, 179, 179);
+}
+.vr{
+    margin-top: 13px;
+    height: 20px;
+    width: 0.5px;
+    background-color: rgb(196, 196, 196);
+}
+#footer-para{
+    background-color: rgb(102, 133, 45);
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 80px 20px 20px 10px ;
+}
+#footer-para {
+    color: black;
+}
+#footer-para p {
+    text-transform: uppercase;
+}
+/* about page  */
+.page-heading{
+    margin-top: 0;
+}
+/* elements for phone  */
+nav .ul1 #srchInp,
+nav #srchSpan,
+#srchbar,
+#toggle,
+#toggle-list{
+    display: none;
+}
+

@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/phone.css" media=(max-width:852px)>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;1,300&family=Quicksand&display=swap"
+        rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+    <title>Fooditude</title>
+</head>
+
+<body>
+    <nav>
+        <div class="ul1">
+            <div id="srchbar">
+                <input class="searchbar" id="srchInp" placeholder="search foods/ catagories here" type="text"
+                    spellcheck="false">
+                <div id="srchSpan">
+                    <img src="images/srchicon1.png" width="40px" alt="">
+                </div>
+            </div>
+            <div id="logo" class=".navbar-brand">
+                <h2>Fooditude</h2>
+            </div>
+            <div id="toggle">
+                <div class="toggle-lines line-1"></div>
+                <div class="toggle-lines line-2"></div>
+                <div class="toggle-lines line-3"></div>
+            </div>
+            <ul id="ul1-icons">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="html/about.html">About</a></li>
+                <a href="https://github.com/afryn" target='_blank'><img src="images/githublogo.png" width="25px"
+                        alt="Github"></a>
+                <a href="https://www.fiverr.com/afreenansari111?up_rollout=true" target="_blank"><img
+                        src="images/fiverrlogo.png" alt="Fiverr" width="25px"></a>
+            </ul>
+        </div>
+        <h1 id="head-h">Fooditude</h1>
+        <p id="head-p">Get healthy and tempting food recipes.</p>
+        <input type="text" placeholder="search foods/ catagories here" class="searchbar">
+        <hr id="navHr">
+        <ul id="ul2">
+            <a href="./index.html" class="ul2HomeBtn">Home</a>
+            <a href="" class="ul2Btn">Dessert</a>
+            <a href="" class="ul2Btn">Appetizer</a>
+            <a href="" class="ul2Btn">Salad</a>
+            <a href="" class="ul2Btn">Pasta</a>
+            <a href="" class="ul2Btn">Others</a>
+        </ul>
+    </nav>
+
+    <div id="space"></div>
+
+    <div id="toggle-list">
+        <li class="tggl-link"><a href="">Home</a></li>
+        <li id="recipe-btn" class="tggl-link">
+            <p> Recipes<i class="arrow"></i></p>
+            <ul id="dwopdown-ul">
+                <li class="drop-rcp "><a href="">Appetizers</a></li>
+                <li class="drop-rcp "><a href="">Pasta</a></li>
+                <li class="drop-rcp "><a href="">Meats</a></li>
+                <li class="drop-rcp "><a href="">Desserts</a></li>
+                <li class="drop-rcp "><a href="">Salads</a></li>
+                <li class="drop-rcp "><a href="">Others</a></li>
+            </ul>
+        </li>
+        <li class="tggl-link"><a href="html/about.html">About</a></li>
+        <li class="tggl-link cntct"><a href="#contact">Contact</a></li>
+    </div>
+    <div id="recipe-cont"></div>
+    <div id="cards-cont">
+        <button class="dismiss"><img src="images/dismiss2.png" alt="dismiss" width="20px"
+                style="border-radius: 3px ;"></button>
+        <div class=" hidden" id="1">
+            <img src="images/homeslide2.2.jpg" alt="French Fries">
+            <h4>French Fries </h4>
+            <p>Category: Appetizers</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non, dicta explicabo!</p>
+            <a class="hidden-btn" href="">Get Recipe</a>
+        </div>
+        <div class=" hidden" id="2">
+            <img src="images/appetizers.jpg" alt="Cocktail">
+            <h4>Cocktail</h4>
+            <p>Category: Appetizers</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non, dicta explicabo!</p>
+            <a class="hidden-btn" href="">Get Recipe</a>
+        </div>
+        <div class="hidden" id="3">
+            <img src="images/spinach.jpg" alt="Spinch Dips">
+            <h4>Spinach Dips</h4>
+            <p>Category: Appetizers</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non, dicta explicabo!</p>
+            <a class="hidden-btn" href="">Get Recipe</a>
+        </div>
+        <div class=" hidden" id="4">
+            <img src="images/mexicansalad.jpg" alt="Mexican Salad">
+            <h4>Mexican Salad</h4>
+            <p>Category: Salads</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non, dicta explicabo!</p>
+            <a class="hidden-btn" href="">Get Recipe</a>
+        </div>
+        <div class=" hidden" id="5">
+            <img src="images/afghansalad.jpg" alt="Afghan Salad">
+            <h4>Afghan Salad</h4>
+            <p>Category: Salads</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non, dicta explicabo!</p>
+            <a class="hidden-btn" href="">Get Recipe</a>
+        </div>
+        <div class=" hidden" id="6">
+            <img src="images/lambkorma.jpg" alt="Lamb $ Almaond">
+            <h4>Lamb & Almond Korma</h4>
+            <p>Category: Meats</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non, dicta explicabo!</p>
+            <a class="hidden-btn" href="">Get Recipe</a>
+        </div>
+        <div class=" hidden" id="7">
+            <img src="images/steak.jpg" alt="Salt & Pepper Steak">
+            <h4>Salt & Pepper Steak</h4>
+            <p>Category: Meats</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non, dicta explicabo!</p>
+            <a class="hidden-btn" href="">Get Recipe</a>
+        </div>
+        <div class=" hidden" id="8">
+            <img src="images/homeslide6.jpg" alt="Sandwich">
+            <h4>Sandwich</h4>
+            <p>Category: Others</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non, dicta explicabo!</p>
+            <a class="hidden-btn" href="">Get Recipe</a>
+        </div>
+        <div class=" hidden" id="9">
+            <img src="images/latest.jpg" alt="Banana & Cereals">
+            <h4>Banana & Cereals</h4>
+            <p>Category: Desserts</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non, dicta explicabo!</p>
+            <a class="hidden-btn" href="">Get Recipe</a>
+        </div>
+        <div class=" hidden" id="10">
+            <img src="images/homeslide1.jpg" alt="Pancake">
+            <h4>Pancake</h4>
+            <p>Category: Desserts</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non, dicta explicabo!</p>
+            <a class="hidden-btn" href="">Get Recipe</a>
+        </div>
+        <div class=" hidden" id="11">
+            <img src="images/donut.jpg" alt="Donuts">
+            <h4>Donuts</h4>
+            <p>Category: Desserts</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non, dicta explicabo!</p>
+            <a class="hidden-btn" href="">Get Recipe</a>
+        </div>
+        <div class=" hidden" id="12">
+            <img src="images/italainshrimpandpasta.jpg" alt="Italian Shrimp & Pasta">
+            <h4>Italian Shrimp & Pasta</h4>
+            <p>Category: Pasta</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non, dicta explicabo!</p>
+            <a class="hidden-btn" href="">Get
+                Recipe</a>
+        </div>
+        <div class=" hidden" id="13">
+            <img src="images/chickenbirayani2.jpg" alt="chicken biryani">
+            <h4>Chicken biryani</h4>
+            <p>Category: Others</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non, dicta explicabo!</p>
+            <a class="hidden-btn" href="">Get Recipe</a>
+        </div>
+        <div class=" hidden" id="14">
+            <img src="images/chickenstew.jpg" alt="chicken stew">
+            <h4>Chicken Stew</h4>
+            <p>Category: Others</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non, dicta explicabo!</p>
+            <a class="hidden-btn" href="">Get Recipe</a>
+        </div>
+        <div class=" hidden" id="15">
+            <img src="images/confettipasta.jpg" alt="confetti pasta">
+            <h4>Confetti Pasta</h4>
+            <p>Category: Pasta</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti, pariatur dolorum?</p>
+            <a class="hidden-btn" href="">Get
+                Recipe</a>
+        </div>
+        <div class=" hidden" id="16">
+            <img src="images/chickenspaghetti.jpg" alt="chicken spaghetti">
+            <h4>Chicken Spaghetti</h4>
+            <p>Category: Pasta</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti, pariatur dolorum?</p>
+            <a class="hidden-btn" href="">Get
+                Recipe</a>
+        </div>
+        <div class=" hidden" id="17">
+            <img src="images/cauliflowermac&cheese4.jpeg" alt="Cauliflower mac&cheese ">
+            <h4>Cauliflower Mac & Cheese</h4>
+            <p>Category: Others</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit, doloremque accusantium.</p>
+            <a class="hidden-btn" href="">Get
+                Recipe</a>
+        </div>
+        <div class=" hidden" id="18">
+            <img src="images/pavbhaji.jpg" alt="pavbhaji">
+            <h4>Pav Bhaji</h4>
+            <p>Category: Others</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit, doloremque accusantium.</p>
+            <a href="">Get
+                Recipe</a>
+        </div>
+
+    </div>
+    <!--cards cont closing-->
+
+    <div id="content">
+        <!--main container-->
+
+        <div class="home cont1">
+            <div class="cont1-slides fade">
+                <div class="slideNo">1</div>
+                <img src="images/homeslide1.jpg" alt="">
+                <div class="slide-content">
+                    <h1 class="slideH1">Pankcakes</h1>
+                    <p class="slideP">Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.
+                        <br>Cooking Time: 20 mins
+                        <br>Prep Time: 30mins
+                    </p>
+                    <button class="readMore ">Get Recipe</button>
+                </div>
+            </div>
+
+            <div class="cont1-slides fade">
+                <div class="slideNo">2</div>
+                <img src="images/homeslide2.2.jpg" alt="">
+                <div class="slide-content">
+                    <h1 class="slideH1">French Fries
+                    </h1>
+                    <p class="slideP">Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.
+                        <br>Cooking Time: 20 mins
+                        <br>Prep Time: 30mins
+                    </p>
+                    <button class="readMore">Get Recipe</button>
+                </div>
+            </div>
+
+            <div class="cont1-slides fade">
+                <div class="slideNo">3</div>
+                <img src="images/homeslide3.jpg" alt="">
+                <div class="slide-content">
+                    <h1 class="slideH1">Noodles</h1>
+                    <p class="slideP">Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.
+                        <br>Cooking Time: 20 mins
+                        <br>Prep Time: 30mins
+                    </p>
+                    <button class="readMore">Get Recipe</button>
+                </div>
+            </div>
+
+            <div class="cont1-slides fade">
+                <div class="slideNo">4</div>
+                <img src="images/homeslide4.jpg" alt="">
+                <div class="slide-content">
+                    <h1 class="slideH1">Spring Rolls
+                    </h1>
+                    <p class="slideP">Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.
+                        <br>Cooking Time: 20 mins
+                        <br>Prep Time: 30mins
+                    </p>
+                    <button class="readMore">Get Recipe</button>
+                </div>
+            </div>
+
+            <div class="cont1-slides fade">
+                <div class="slideNo">5</div>
+                <img src="images/homeslide5.jpg" alt="">
+                <div class="slide-content">
+                    <h1 class="slideH1">Shahi Paneer & Naans</h1>
+                    <p class="slideP">Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.
+                        <br>Cooking Time: 20 mins
+                        <br>Prep Time: 30mins
+                    </p>
+                    <button class="readMore">Get Recipe</button>
+                </div>
+            </div>
+
+            <div class="cont1-slides fade">
+                <div class="slideNo">6</div>
+                <img src="images/homeslide6.jpg" alt="">
+                <div class="slide-content">
+                    <h1 class="slideH1">Sandwich</h1>
+                    <p class="slideP">Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.
+                        <br>Cooking Time: 20 mins
+                        <br>Prep Time: 30mins
+                    </p>
+                    <button class="readMore">Get Recipe</button>
+                </div>
+            </div>
+
+            <!-- next and previous buttons  -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        </div>
+        <h1 id="ftrd-h1">Featured Recipes</h1>
+        <!-- featured scroller  -->
+        <div id="featured-div">
+            <div id="featured-scroller" class="scroller auto-scroller">
+                <div class="featured-card">
+                    <img src="images/italainshrimpandpasta.jpg" alt="italian shrimp and pasta">
+                    <h4>Italian Shrimp & Pasta</h4>
+                    <p>Category: Pasta</p>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non, dicta explicabo!</p>
+                    <a class="card-btn hidden-btn" href="">Get Recipe</a>
+                </div>
+                <div class="featured-card">
+                    <img src="images/chickenbirayani2.jpg" alt="chicken biryani">
+                    <h4>Chicken biryani</h4>
+                    <p>Category: Others</p>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non, dicta explicabo!</p>
+                    <a class="card-btn hidden-btn" href="">Get Recipe</a>
+                </div>
+                <div class="featured-card">
+                    <img src="images/chickenstew.jpg" alt="chicken stew">
+                    <h4>Chicken Stew</h4>
+                    <p>Category: Others</p>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non, dicta explicabo!</p>
+                    <a class="card-btn hidden-btn" href="">Get Recipe</a>
+                </div>
+                <div class="featured-card">
+                    <img src="images/confettipasta.jpg" alt="confetti pasta">
+                    <h4>Confetti Pasta</h4>
+                    <p>Category: Pasta</p>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti, pariatur dolorum?</p>
+                    <a class="card-btn hidden-btn" href="">Get Recipe</a>
+                </div>
+                <div class="featured-card">
+                    <img src="images/italainshrimpandpasta.jpg" alt="italian shrimp and pasta">
+                    <h4>Italian Shrimp & Pasta</h4>
+                    <p>Category: Pasta</p>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti, pariatur dolorum?</p>
+                    <a class="card-btn hidden-btn" href="">Get Recipe</a>
+                </div>
+                <div class="featured-card">
+                    <img src="images/chickenspaghetti.jpg" alt="chicken spaghetti">
+                    <h4>Chicken Spaghetti</h4>
+                    <p>Category: Pasta</p>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti, pariatur dolorum?</p>
+                    <a class="card-btn hidden-btn" href="">Get Recipe</a>
+                </div>
+                <div class="featured-card">
+                    <img src="images/cauliflowermac&cheese4.jpeg" alt="mac&cheese cauliflower">
+                    <h4>Cauliflower Mac & Cheese</h4>
+                    <p>Category: Others</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit, doloremque accusantium.</p>
+                    <a href="" class="card-btn hidden-btn">Get
+                        Recipe</a>
+                </div>
+                <div class="featured-card">
+                    <img src="images/pavbhaji.jpg" alt="pavbhaji">
+                    <h4>Pav Bhaji</h4>
+                    <p>Category: Others</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit, doloremque accusantium.</p>
+                    <a href="" class="card-btn hidden-btn">Get Recipe</a>
+                </div>
+            </div>
+            <!--featured scroller closing tag-->
+        </div>
+        <!--featured div closing tag-->
+        <div class="cont2">
+            <div class="latest-post grid-item item1">
+                <h1 id="latest-h1">Latest Recipe</h1>
+                <div id="ltst-rcp-cont">
+                    <img src="images/latest.jpg" class="img">
+                    <h3>Banana & Cereals</h3>
+                    <p class="dt">10 November, 2020</p>
+                    <p>Healthy Breakfast</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos hic quam voluptates ad deserunt
+                        libero,
+                        consequatur nam similique, modi amet voluptas quidem quis corporis eum odit commodi laborum
+                        molestiae
+                        aut?</p>
+                    <button id="latestButton" class="hidden-btn">Continue Reading</button>
+                </div>
+            </div>
+            <div id="abt-fllw">
+                <div class="about-me abt-fllw-crd">
+                    <h2 id="abt-h2">About Me</h2>
+                    <img src="images/women2bg.jpg">
+                    <h2>Afreen Ansari</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam saepe odio quaerat fugit repellat
+                        similique
+                        sequi incidunt nostrum, tempore voluptates.</p>
+                    <a href="html/about.html" class="">Read More</a>
+                    <hr id="about-hr">
+                </div>
+
+                <div id="follow" class="abt-fllw-crd">
+                    <h2>Follow Me</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni commodi natus animi ad corporis
+                        eius.
+                    </p>
+                    <p>(Below mentioned links are disabled)</p>
+                    <div id="icons-div">
+                        <a href="#">
+                            <div class="color-icons" id="instaColor"><img src="images/instacolor.jpg" alt="instagram"  width="40px">
+                            </div>
+                        </a>
+
+                        <a href="#">
+                            <div class="color-icons" id="fbColor"><img src="images/fbcolor.png" alt="facebook"  width="30px">
+                            </div>
+                        </a>
+
+                        <a href="#">
+                            <div id="pinColor" class="color-icons"> <img src="images/pinterestcolor.png"
+                                    alt="pinterest" width="40px">
+                            </div>
+                        </a>
+
+                        <a href="#">
+                            <div id="twitterColor" class="color-icons"> <img src="images/twittercolor.png" alt="twitter" width="50px">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <!--follow closing tag-->
+            </div>
+            <!--abt-fllw closing-->
+        </div>
+        <!--cont2 closing-->
+
+        <div class="categories">
+            <div id="categories-div">
+                <div class="ctgry-box">
+                    <div id="dssrt" class="catagory">
+                        <p> Desserts</p>
+                    </div>
+                    <div class="dssrt hover-div">
+                        <a class="hoverA" href="">Doughnuts</a>
+                        <a class="hoverA" href="">Cupcakes</a>
+                        <a class="hoverA" href="">Candies</a>
+                        <a class="hoverA" href="">Pancakes</a>
+                    </div>
+                </div>
+
+                <div class="ctgry-box">
+                    <div id="apptzr" class="catagory">
+                        <p>Appetizers</p>
+                    </div>
+                    <div class="apptzr hover-div">
+                        <a class="hoverA" href="">French Fries</a>
+                        <a class="hoverA" href="">Garlic Bread</a>
+                        <a class="hoverA" href="">Cocktails</a>
+                        <a class="hoverA" href="">Spinach Dip</a>
+                    </div>
+                </div>
+
+                <div class="ctgry-box">
+                    <div id="slds" class="catagory">
+                        <p>Salads</p>
+                    </div>
+                    <div class="slds hover-div">
+                        <a class="hoverA" href="">Mexican Black Bean Salad</a>
+                        <a class="hoverA" href="">Woldorf Salad</a>
+                        <a class="hoverA" href="">Afghan Salad</a>
+                    </div>
+                </div>
+
+                <div class="ctgry-box">
+                    <div id="mts" class="catagory">
+                        <p>Meats</p>
+                    </div>
+                    <div class="mts hover-div">
+                        <a class="hoverA" href="">Lamb and Almond Korma</a>
+                        <a class="hoverA" href="">Salt and Pepper Steak</a>
+                        <a class="hoverA" href="">Chicken Schnitzel</a>
+                    </div>
+                </div>
+
+                <div class="ctgry-box">
+                    <div id="pasta" class="catagory">
+                        <p>Pasta</p>
+                    </div>
+                    <div class="pasta hover-div">
+                        <a class="hoverA" href="">Italian Pasta</a>
+                        <a class="hoverA" href="">White Sauce Pasta</a>
+                        <a class="hoverA" href="">Cheese Pasta</a>
+                    </div>
+                </div>
+
+                <div class="ctgry-box">
+                    <div id="others" class="catagory">
+                        <p>Others</p>
+                    </div>
+                    <div class="others hover-div">
+                        <a class="hoverA" href="">Sandwich</a>
+                        <a class="hoverA" href="">Tart</a>
+                        <a class="hoverA" href="">Bread Cutlets</a>
+                    </div>
+                </div>
+            </div><!--categories div closing tag -->
+
+        </div><!--categories closing tag -->
+
+        <hr id="cmnts-hr">
+
+        <div id="contact">
+            <form id="cntct-form" class="row g-3 mx-5 contact-form">
+                <h3>Contact Me</h3>
+                <p>For any queries or discussion feel free to contact.</p>
+                <p id="error1">Someting went wrong, please fill the form correctly.</p>
+                <p id="success1">Your message will be responded soon. Thank You.</p>
+                <!-- first name  -->
+                <div>
+                    <input type="text" class="form-control" id="contact-form-Fname" placeholder="first name">
+                    <div class="valid-feedback"></div>
+                    <small class="form-text  invalid-feedback">
+                        First name must be 3-15 characters long.
+                    </small>
+                </div>
+
+                <!-- last name  -->
+                <div>
+                    <input type="text" class="form-control" id="contact-form-Lname" placeholder="last name">
+                    <div class="valid-feedback"></div>
+                    <small class="form-text invalid-feedback">
+                        Last name must be 3-15 characters long.
+                    </small>
+                </div>
+
+                <!-- email  -->
+                <div>
+                    <input type="email" class="form-control" id="contact-form-EmailInp" placeholder="enter email">
+                    <div class="valid-feedback"></div>
+                    <small class="form-text invalid-feedback">
+                        Please enter a valid email.
+                    </small>
+                </div>
+
+                <!-- textarea  -->
+                <div class="mb-3">
+                    <textarea class="form-control" placeholder="type message here..." id="exampleFormControlTextarea1"
+                        rows="3"></textarea>
+                </div>
+
+                <!-- button  -->
+                <div class="col-12">
+                    <button type="submit" class="formBtn" id="contactFormBtn">Send</button>
+                </div>
+
+            </form>
+            <!--contact form closing-->
+
+
+
+            <form id="nws-lttr" class="row g-3 mx-5 contact-form">
+                <h3>Subscribe to our newsletter</h3>
+                <p>Subscribe to our newsletter and receive new recipes in your inbox</p>
+                <p id="error2">Someting went wrong, please fill the form correctly.</p>
+                <p id="success2">Thank You for Subscribing.</p>
+                <!-- first name  -->
+                <div>
+                    <!-- <label for="fNameInp" class="form-label">First Name</label> -->
+                    <input type="text" class="form-control" id="fNameInp" placeholder="first name">
+                    <div class="valid-feedback"></div>
+                    <small class="form-text  invalid-feedback">
+                        First name must be 3-15 characters long.
+                    </small>
+                </div>
+
+                <!-- last name  -->
+                <div>
+                    <!-- <label for="lNameInp" class="form-label">Last Name</label> -->
+                    <input type="text" class="form-control" id="lNameInp" placeholder="last name">
+                    <div class="valid-feedback"></div>
+                    <small class="form-text invalid-feedback">
+                        Last name must be 3-15 characters long.
+                    </small>
+                </div>
+
+                <!-- email  -->
+                <div>
+                    <!-- <label for="emailInp" class="form-label">Email</label> -->
+                    <input type="email" class="form-control" id="emailInp" placeholder="enter email">
+                    <div class="valid-feedback"></div>
+                    <small class="form-text invalid-feedback">
+                        Please enter a valid email.
+                    </small>
+                </div>
+
+                <!-- button  -->
+                <div class="col-12">
+                    <button type="submit" id="sbscrbformBtn">Subscribe!</button>
+                </div>
+            </form>
+        </div>
+
+    </div>
+    <!--content closing tag-->
+
+    <footer>
+        <div id="footer-icons-div">
+            <a href="https://twitter.com/AfreenA19951267" target="_blank" class="fi">
+                <div class="footer-icon"><img src="images/twitterlogo.png" alt="Twitter" width="30px"></div>
+            </a>
+            <a href="https://www.fiverr.com/afreenansari111?up_rollout=true" target="_blank" class="fi">
+                <div class="footer-icon"><img src="images/fiverrlogo.png" alt="Fiverr" width="30px"></div>
+            </a>
+            <a href="https://github.com/afryn" target="_blank" class="fi">
+                <div class="footer-icon"><img src="images/githublogo.png" alt="Github" width="30px"></div>
+            </a>
+        </div>
+        <!--footer icons div closing tag-->
+
+        <div id="footer-links1">
+            <a href="./index.html">Home</a>
+            <a href="#contact">Contact</a>
+            <a href="html/about.html">About</a>
+        </div>
+        <div id="footer-links2">
+            <a href="#contact">Contact</a>
+            <div class="vr"></div>
+            <a href="#featured-div">Recipes</a>
+            <div class="vr"></div>
+            <a href="html/about.html">About</a>
+        </div>
+        <div id="footer-para">
+            <p>healthy fast-casual food, crafted with &#10084;</p>
+            <small> &copy; 2021 Afreen Ansari.</small>
+        </div>
+    </footer>
+
+    <!-- jquery  -->
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+
+    <!-- main js  -->
+    <script src="js/main.js"></script>
+
+    <!-- bootstrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js"
+        integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
