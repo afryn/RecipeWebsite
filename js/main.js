@@ -75,7 +75,7 @@ function scroller() {
         $('#featured-scroller').animate({ scrollLeft: slide }, 800);
         // each card is 300px wide 
         slide = slide + 380
-        if (slide > 1900) {
+        if (slide > 2660) {
             $('#featured-scroller').animate({ scrollLeft: -slide }, 700);
             slide = 380
         }
@@ -311,6 +311,7 @@ let validLEmail = false
 $('#error2').hide()
 $('#success2').hide()
 
+// subscribe letter first name input
 lttrFN.addEventListener('blur', () => {
     let fName = lttrFN.value
     let regex = /[a-zA-Z]{3,15}/
@@ -323,6 +324,8 @@ lttrFN.addEventListener('blur', () => {
         validLFN = false;
     }
 });
+
+// subscribe letter last name input
 lttrLN.addEventListener('blur', () => {
     let LName = lttrLN.value
     let regex = /[a-zA-Z\.\ ]{3,15}/
@@ -335,6 +338,7 @@ lttrLN.addEventListener('blur', () => {
         validLLN = false;
     }
 });
+// subscribe letter email input
 lttrEmail.addEventListener('blur', () => {
     let email = lttrEmail.value
     let regex = /([a-zA-Z0-9\.\*\-\_\&]{3,15}@[a-zA-Z]{1,5}\.[a-zA-Z]{2,3})/
@@ -348,6 +352,7 @@ lttrEmail.addEventListener('blur', () => {
     }
 });
 
+// subscribe letter button
 sbscrbformBtn.addEventListener('click', (e) => {
     e.preventDefault()
     if (validLEmail && validLFN && validLLN) {
@@ -418,7 +423,6 @@ dropRcp.forEach(element => {
 });
 
 const featuredScroller = document.getElementById('featured-scroller');
-
 const x = window.matchMedia("(max-width:925px)");
 ftrdPhone(x);
 x.addListener(ftrdPhone);
