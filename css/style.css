@@ -144,11 +144,7 @@ nav #ul2 a:focus{
     background-color: rgb(245, 245, 245);
 }
 #cards-cont button{
-    cursor: pointer;
-    border: none;
-    position: absolute;
-    top: 60px;
-    right: 0;
+    display: none;
 }
 .hidden{
     text-align: center;
