@@ -67,6 +67,14 @@ nav h1{
     color: black;
     text-decoration: none;
 }
+#cards-cont button{
+    display: block;
+    cursor: pointer;
+    border: none;
+    position: absolute;
+    top: 60px;
+    right: 0;
+}
 .drop-rcp{
     margin:10px ;
 }
