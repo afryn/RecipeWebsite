@@ -72,11 +72,11 @@ function scroller() {
 
     if (!hovering) {
 
-        $('#featured-scroller').animate({ scrollLeft: slide }, 700);
+        $('#featured-scroller').animate({ scrollLeft: slide }, 800);
         // each card is 300px wide 
         slide = slide + 380
         if (slide > 1900) {
-            $('#featured-scroller').animate({ scrollLeft: -slide }, 600);
+            $('#featured-scroller').animate({ scrollLeft: -slide }, 700);
             slide = 380
         }
     }
@@ -433,7 +433,7 @@ function ftrdPhone(x){
                 hovering = true
             } 
         });
-    }
+    };
 }
 
 
