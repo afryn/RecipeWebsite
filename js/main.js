@@ -419,13 +419,12 @@ dropRcp.forEach(element => {
 
 const featuredScroller = document.getElementById('featured-scroller');
 
-featuredScroller.addEventListener('touchstart',()=>{
+featuredScroller.addEventListener('click',()=>{
     hovering = true;
-});
-
-featuredScroller.addEventListener('touchend',()=>{
-    hovering = false
-})
+}),
+function(){
+    hovering = false;
+}
 
 
 
