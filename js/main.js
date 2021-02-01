@@ -417,9 +417,17 @@ dropRcp.forEach(element => {
     });
 });
 
-$('.blank-link').on("click",function(e){
-    e.preventDefault()
+const featuredScroller = document.getElementById('featured-scroller');
+
+featuredScroller.addEventListener('touchstart',()=>{
+    hovering = true;
+});
+
+featuredScroller.addEventListener('touchend',()=>{
+    hovering = false
 })
+
+
 
 
 
