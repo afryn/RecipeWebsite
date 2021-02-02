@@ -437,7 +437,7 @@ function ftrdPhone(x){
                 hovering = true
             } 
         });
-        slide = 335
+        slide = 330
     };
 }
 
