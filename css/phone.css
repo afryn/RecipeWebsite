@@ -231,7 +231,7 @@ nav .ul1 #srchInp{
 
 #featured-scroller{
     margin-left:0;
-    overflow: auto;
+    overflow-x: visible;
 }
 .latest-post{
     width: 100%;
