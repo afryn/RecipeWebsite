@@ -429,15 +429,7 @@ x.addListener(ftrdPhone);
 
 function ftrdPhone(x){
     if(x.matches){
-        featuredScroller.addEventListener('click',()=>{
-            if(hovering){
-                hovering = false
-            }
-            else{
-                hovering = true
-            } 
-        });
-        slide = 330
+        hovering = true
     };
 }
 
