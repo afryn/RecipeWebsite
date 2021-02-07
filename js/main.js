@@ -75,7 +75,8 @@ function scroller() {
         $('#featured-scroller').animate({ scrollLeft: slide }, 800);
         // each card is 300px wide 
         slide = slide + 380
-        if (slide > 2660) {
+        console.log(slide)
+        if (slide > 2655) {
             $('#featured-scroller').animate({ scrollLeft: -slide }, 700);
             slide = 380
         }
