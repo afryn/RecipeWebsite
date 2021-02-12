@@ -13,6 +13,37 @@ h1, h2, h3, h4, h5, h6{
 p, a, input, li{
     font-family: 'Josefin Sans', sans-serif;
 }
+
+/* FONTAWESOM */
+.fa-times-circle{
+    font-size: 1.5rem !important;
+    margin-top: 5px;
+}
+.fa-github{
+    font-size: 2rem !important;
+    color: black;
+}
+.color-icon{
+    margin: 10px;
+    font-size: 3rem !important;
+}
+.f-twitter{
+    font-size: 2rem !important;
+    color: black !important;
+}
+.fa-pinterest{
+    color: red;
+}
+.fa-facebook{
+    color: blue;
+    font-size: 2.5rem !important;
+}
+.fa-instagram{
+    color: rgb(226, 98, 119);
+}
+.fa-twitter{
+    color: skyblue;
+}
 /* navigation bar  ..................................................*/
 nav{
     display: flex;
@@ -523,35 +554,6 @@ nav #ul2 a:focus{
     width:200px ;
     display: flex;
     justify-content: center;
-}
-.color-icons{
-    background-color: black;
-    margin: 3px;
-    height: 50px;
-    width: 50px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.color-icons img{
-    border-radius: 20%;
-}
-#fbColor{
-    background-color: rgb(57, 108, 175);
-}
-#twitterColor{
-    background-color: rgb(9, 164, 236);
-}
-#instaColor{
-    background-color: rgb(250, 64, 126);
-}
-#pinColor{
-    background-color: rgb(221, 0, 0);
-}
-#pinColor img{
-    height: 30px;
-width: 30px;
 }
 #sbscribe-form img{
     width: 60% ;
