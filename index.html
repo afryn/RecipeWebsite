@@ -8,13 +8,17 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/phone.css" media=(max-width:852px)>
 
+    <!-- GOOGLE FONTS  -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;1,300&family=Quicksand&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;1,300&family=Quicksand&display=swap"
         rel="stylesheet">
 
+        <!-- BOOTSTRAP  -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+        <!-- FONT AWESOME  -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <title>Fooditude</title>
 </head>
@@ -26,7 +30,7 @@
                 <input class="searchbar" id="srchInp" placeholder="search foods/ catagories here" type="text"
                     spellcheck="false">
                 <div id="srchSpan">
-                    <img src="images/srchicon1.png" width="40px" alt="">
+                    <i class="fa fa-search"></i>
                 </div>
             </div>
             <div id="logo" class=".navbar-brand">
@@ -40,8 +44,9 @@
             <ul id="ul1-icons">
                 <li><a href="./index.html">Home</a></li>
                 <li><a href="" class="blank-link">About</a></li>
-                <a href="https://github.com/afryn" target='_blank'><img src="images/githublogo.png" width="25px"
-                        alt="Github"></a>
+                <a href="https://github.com/afryn" target='_blank'>
+                <i class="fa fa-github"></i>
+                </a>
                 <a href="https://www.fiverr.com/afreenansari111?up_rollout=true" target="_blank"><img
                         src="images/fiverrlogo.png" alt="Fiverr" width="25px"></a>
             </ul>
@@ -80,8 +85,9 @@
     </div>
     <div id="recipe-cont"></div>
     <div id="cards-cont">
-        <button class="dismiss"><img src="images/dismiss2.png" alt="dismiss" width="20px"
-                style="border-radius: 3px ;"></button>
+
+        <button class="dismiss"><i class="fa fa-times-circle"></i></button>
+
         <div class=" hidden" id="1">
             <img src="images/homeslide2.2.jpg" alt="French Fries">
             <h4>French Fries </h4>
@@ -406,26 +412,13 @@
                     </p>
                     <p>(Below mentioned links are disabled)</p>
                     <div id="icons-div">
-                        <a href="">
-                            <div class="color-icons" id="instaColor"><img src="images/instacolor.jpg" alt="instagram"  width="40px">
-                            </div>
-                        </a>
+                        <a href=""><i class="fa fa-instagram color-icon"></i></a>
 
-                        <a href="">
-                            <div class="color-icons" id="fbColor"><img src="images/fbcolor.png" alt="facebook"  width="30px">
-                            </div>
-                        </a>
+                        <a href=""><i class="fa fa-facebook color-icon"></i></a>
 
-                        <a href="">
-                            <div id="pinColor" class="color-icons"> <img src="images/pinterestcolor.png"
-                                    alt="pinterest" width="40px">
-                            </div>
-                        </a>
+                        <a href=""> <i class="fa fa-pinterest color-icon"></i></a>
 
-                        <a href="">
-                            <div id="twitterColor" class="color-icons"> <img src="images/twittercolor.png" alt="twitter" width="50px">
-                            </div>
-                        </a>
+                        <a href=""><i class="fa fa-twitter color-icon"></i></a>
                     </div>
                 </div>
                 <!--follow closing tag-->
@@ -606,13 +599,19 @@
     <footer>
         <div id="footer-icons-div">
             <a href="https://twitter.com/AfreenA19951267" target="_blank" class="fi">
-                <div class="footer-icon"><img src="images/twitterlogo.png" alt="Twitter" width="30px"></div>
+                <div class="footer-icon">
+                    <i class="fa fa-twitter f-twitter"></i>
+                </div>
             </a>
             <a href="https://www.fiverr.com/afreenansari111?up_rollout=true" target="_blank" class="fi">
-                <div class="footer-icon"><img src="images/fiverrlogo.png" alt="Fiverr" width="30px"></div>
+                <div class="footer-icon">
+                    <img src="images/fiverrlogo.png" alt="Fiverr" width="30px">
+                </div>
             </a>
             <a href="https://github.com/afryn" target="_blank" class="fi">
-                <div class="footer-icon"><img src="images/githublogo.png" alt="Github" width="30px"></div>
+                <div class="footer-icon">
+                    <i class="fa fa-github"></i>
+                </div>
             </a>
         </div>
         <!--footer icons div closing tag-->
